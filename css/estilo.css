@@ -43,7 +43,7 @@ nav li {
     font-weight: lighter;
     font-size: small;
     border: solid orange 2px;
-    background-color: black ;
+    background-color: black;
 }
 
 nav a {
@@ -197,36 +197,38 @@ footer li {
     }
 
     p {
+        font-size: medium;
         text-align: center;
     }
-    
-    .main__index{
+
+    /*grid index*/
+    .main__index {
         display: grid;
-        grid-template-rows: repeat(4,auto) ;
-        grid-template-columns:1fr 2fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr 2fr;
     }
-    
-    .fc{
+
+    .fc {
         grid-row: 1/2;
         grid-column: 1/3;
     }
-    
-    #partel{
+
+    #partel {
         grid-row: 2/3;
         grid-column: 1/3;
     }
 
-    .img__credit{
+    .img__credit {
         grid-row: 3/4;
-        grid-column:1/2 ;
-        
+        grid-column: 1/2;
+
     }
-    
-    .partel{
+
+    .partel {
         grid-row: 3/4;
         grid-column: 2/3;
     }
-    
+
     .img__p {
         width: 30vw;
         height: auto;
@@ -234,21 +236,24 @@ footer li {
         padding: 0px;
     }
 
-    .img__credit img{
+    
+    .ficcion {
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+
+    .img__credit img {
         width: 30vw;
         height: auto;
     }
- 
-    .ficcion{
-        grid-row:4/5;
-        grid-column:1/3 ;
-    }
+    /*fin grid index*/
 
-    #cern__main{
-        display: grid;;
+    /*grid cern*/
+    #cern__main {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(7, auto);
-        grid-template-areas: 
+        grid-template-areas:
             "cern cern cern"
             "cernimg cernp cernp"
             "lhc lhc lhc"
@@ -258,79 +263,81 @@ footer li {
             "skkimg skkp snoimg";
 
     }
-     
-    #cern__main img{
+
+    #cern__main img {
         width: 30vw;
     }
 
-    #cern{
+    #cern {
         grid-area: cern;
     }
 
-    #cernimg{
+    #cernimg {
         grid-area: cernimg;
 
     }
 
-    #cernp{
+    #cernp {
         grid-area: cernp;
     }
 
-    #lhc{
+    #lhc {
         grid-area: lhc;
     }
 
-    #lhcimg--left{
+    #lhcimg--left {
         grid-area: lhcimgleft;
     }
 
-    .lhcp1{
+    .lhcp1 {
         grid-area: lhcp1;
     }
 
-    .lhcp2{
+    .lhcp2 {
         grid-area: lhcp2;
     }
 
-    .lhcp3{
+    .lhcp3 {
         grid-area: lhcp3;
     }
 
-    #lhcimg--left2{
+    #lhcimg--left2 {
         grid-area: lhcimgleft2;
     }
 
-    #lhcimg--right{
+    #lhcimg--right {
         grid-area: lhcimgright;
     }
 
-    #skk{
+    #skk {
         grid-area: skk;
     }
 
-    #skkimg{
+    #skkimg {
         grid-area: skkimg;
     }
 
-    .skkp{
+    .skkp {
         grid-area: skkp;
     }
 
-    #snoimg{
+    #snoimg {
         grid-area: snoimg;
     }
+    /*fin grid cern*/
 
-    .ap__imgp{
+    /* exclusivo pagina acerca*/
+    .ap__imgp {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
     }
 
-    .ap__imgp img{
+    .ap__imgp img {
         width: 30%;
     }
 
-    .redes__cont{
+    .redes__cont {
         justify-content: center;
     }
 
@@ -343,53 +350,53 @@ footer li {
         width: 50vw;
         height: 25vw;
     }
-
+    /*fin exclusivo pagina acera*/
     /*termina main*/
 }
 
 /*mediaq desk*/
-@media only screen and (min-width:750px){
+@media only screen and (min-width:750px) {
 
     /*comienza header*/
-    h1{
+    h1 {
         font-size: 35px;
     }
 
-    nav li{
+    nav li {
         font-size: medium;
     }
 
     /*termina header*/
     /*comienze main*/
 
-    #cern__main{
+    #cern__main {
         grid-template-columns: 1fr 2fr 1fr;
     }
 
-    #cern__main img{
+    #cern__main img {
         width: 25vw;
     }
 
     h2 {
         font-size: x-large;
     }
-    
+
     h3 {
         font-weight: bold;
         margin: 10px 25px 10px;
         font-size: large;
     }
-    
+
     h4 {
         font-size: large;
     }
-    
+
     p {
         font-size: medium;
         font-weight: normal;
     }
 
-    .ap__imgp img{
+    .ap__imgp img {
         width: 40%;
     }
 
