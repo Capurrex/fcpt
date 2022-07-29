@@ -121,6 +121,7 @@ iframe {
     position: relative;
     left: 15vw;
     width: 70vw;
+    height: auto;
 }
 
 form {
@@ -329,6 +330,20 @@ footer li {
         width: 30%;
     }
 
+    .redes__cont{
+        justify-content: center;
+    }
+
+    .redes img {
+        width: 5vw;
+    }
+
+    iframe {
+        left: 25vw;
+        width: 50vw;
+        height: 25vw;
+    }
+
     /*termina main*/
 }
 
@@ -376,6 +391,12 @@ footer li {
 
     .ap__imgp img{
         width: 40%;
+    }
+
+    iframe {
+        left: 30vw;
+        width: 40vw;
+        height: 20vw;
     }
 
 
