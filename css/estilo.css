@@ -4,17 +4,35 @@
     text-decoration: none;
 }
 
+@keyframes animacionheader {
+    0% {background-color:gold ;}
+    10%{ background-image: linear-gradient(to right,steelblue, gold 90%) ;}
+    20%{ background-image: linear-gradient(to right,steelblue, gold 80%) ;}
+    30%{ background-image: linear-gradient(to right,steelblue, gold 70%) ;}
+    40%{ background-image: linear-gradient(to right,steelblue, gold 60%) ;}
+    50%{ background-image: linear-gradient(to right,steelblue, gold ) ;}
+    60%{background-image: linear-gradient(to bottom right, steelblue 50%, gold);}
+    70%{background-image: linear-gradient(to bottom right, steelblue 60%, gold);}
+    80%{background-image: linear-gradient(to bottom right, steelblue 70%, gold);}
+    90%{background-image: linear-gradient(to bottom right, steelblue 80%, gold);}
+    100%{background-image: linear-gradient(to bottom right, steelblue 90%, gold);}
+}
+
 /*comienza header*/
 
 header {
+    background-image: linear-gradient(to bottom right, steelblue 90%, gold  );
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
     background-position: center;
-    background-color: steelblue;
     width: 100vw;
     height: 150px;
+    animation-name: animacionheader;
+    animation-iteration-count: 1;   
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
 }
 
 h1 {
@@ -52,6 +70,12 @@ nav a {
 
 nav a:hover {
     color: orange;
+    transition: all 1s;
+}
+
+header nav li:hover{
+    transform: rotate(-5deg) scale(1.2);
+    transition: all 1s;
 }
 
 
@@ -158,11 +182,15 @@ footer ul {
 }
 
 footer a {
-    color: cyan;
+    color: black;
+}
+
+footer a:hover{
+    color: darkgray;
 }
 
 footer li {
-    color: cyan;
+    color: black;
 }
 
 /*termina footer*/
@@ -227,6 +255,7 @@ footer li {
     .partel {
         grid-row: 3/4;
         grid-column: 2/3;
+        align-self: center;
     }
 
     .img__p {
