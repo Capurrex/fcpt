@@ -22,10 +22,6 @@
 
 header {
     background-image: linear-gradient(to bottom right, steelblue 90%, gold  );
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
     background-position: center;
     width: 100vw;
     height: 150px;
@@ -33,6 +29,7 @@ header {
     animation-iteration-count: 1;   
     animation-duration: 2s;
     animation-timing-function: ease-in;
+    text-align: center;
 }
 
 h1 {
@@ -41,7 +38,6 @@ h1 {
     font-weight: bolder;
     font-family: sans-serif;
     width: 60vw;
-    text-align: center;
 }
 
 
@@ -68,16 +64,10 @@ nav a {
     color: gold;
 }
 
-nav a:hover {
+ nav a:hover {
     color: orange;
     transition: all 1s;
-}
-
-header nav li:hover{
-    transform: rotate(-5deg) scale(1.2);
-    transition: all 1s;
-}
-
+ } 
 
 /*termina header*/
 /*comienza main*/
@@ -196,7 +186,7 @@ footer li {
 /*termina footer*/
 
 /* mediaq tablet*/
-@media only screen and (min-width:400px) {
+@media only screen and (min-width:576px) {
 
     /*comienza header*/
     header {
@@ -229,132 +219,6 @@ footer li {
         text-align: center;
     }
 
-    /*grid index*/
-    .main__index {
-        display: grid;
-        grid-template-rows: repeat(4, auto);
-        grid-template-columns: 1fr 2fr;
-    }
-
-    .fc {
-        grid-row: 1/2;
-        grid-column: 1/3;
-    }
-
-    #partel {
-        grid-row: 2/3;
-        grid-column: 1/3;
-    }
-
-    .img__credit {
-        grid-row: 3/4;
-        grid-column: 1/2;
-
-    }
-
-    .partel {
-        grid-row: 3/4;
-        grid-column: 2/3;
-        align-self: center;
-    }
-
-    .img__p {
-        width: 30vw;
-        height: auto;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    
-    .ficcion {
-        grid-row: 4/5;
-        grid-column: 1/3;
-    }
-
-    .img__credit img {
-        width: 30vw;
-        height: auto;
-    }
-    /*fin grid index*/
-
-    /*grid cern*/
-    #cern__main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(7, auto);
-        grid-template-areas:
-            "cern cern cern"
-            "cernimg cernp cernp"
-            "lhc lhc lhc"
-            "lhcimgleft lhcp1 lhcp2"
-            "lhcimgleft2 lhcp3 lhcimgright"
-            "skk skk skk"
-            "skkimg skkp snoimg";
-
-    }
-
-    #cern__main img {
-        width: 30vw;
-    }
-
-    #cern {
-        grid-area: cern;
-    }
-
-    #cernimg {
-        grid-area: cernimg;
-
-    }
-
-    #cernp {
-        grid-area: cernp;
-    }
-
-    #lhc {
-        grid-area: lhc;
-    }
-
-    #lhcimg--left {
-        grid-area: lhcimgleft;
-    }
-
-    .lhcp1 {
-        grid-area: lhcp1;
-    }
-
-    .lhcp2 {
-        grid-area: lhcp2;
-    }
-
-    .lhcp3 {
-        grid-area: lhcp3;
-    }
-
-    #lhcimg--left2 {
-        grid-area: lhcimgleft2;
-    }
-
-    #lhcimg--right {
-        grid-area: lhcimgright;
-    }
-
-    #skk {
-        grid-area: skk;
-    }
-
-    #skkimg {
-        grid-area: skkimg;
-    }
-
-    .skkp {
-        grid-area: skkp;
-    }
-
-    #snoimg {
-        grid-area: snoimg;
-    }
-    /*fin grid cern*/
-
     /* exclusivo pagina acerca*/
     .ap__imgp {
         display: flex;
@@ -384,7 +248,7 @@ footer li {
 }
 
 /*mediaq desk*/
-@media only screen and (min-width:750px) {
+@media only screen and (min-width:768px) {
 
     /*comienza header*/
     h1 {
