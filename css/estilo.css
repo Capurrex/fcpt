@@ -40,15 +40,12 @@ h1 {
     width: 90%;text-align: justify;
 }
 
-nav{
-    width: 100vw;
-}
-
 nav li {
     border: solid orange 2px;
     background-color: black;
-    width: 15%;
+    width: 15vw;
     height: calc(2.fit-content);
+    text-align: center;
 }
 
 nav a {
@@ -79,6 +76,10 @@ main img {
     height: auto;
     padding: 0px 10vw 10px;
     margin-left: 5vw;
+}
+
+h1{
+    text-align: center;
 }
 
 h2 {
