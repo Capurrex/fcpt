@@ -10,7 +10,7 @@
     20%{ background-image: linear-gradient(to right,steelblue, gold 80%) ;}
     30%{ background-image: linear-gradient(to right,steelblue, gold 70%) ;}
     40%{ background-image: linear-gradient(to right,steelblue, gold 60%) ;}
-    50%{ background-image: linear-gradient(to right,steelblue, gold ) ;}
+    50%{ background-image: linear-gradient(to right,steelblue, gold 50% ) ;}
     60%{background-image: linear-gradient(to bottom right, steelblue 50%, gold);}
     70%{background-image: linear-gradient(to bottom right, steelblue 60%, gold);}
     80%{background-image: linear-gradient(to bottom right, steelblue 70%, gold);}
@@ -34,16 +34,23 @@ header {
 
 h1 {
     color: gold;
-    font-size: large;
+    font-size: 20px;
     font-weight: bolder;
     font-family: sans-serif;
-    width: 90%;text-align: justify;
+    width: 90%;
+    text-align: center;
+}
+
+nav{
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    z-index: 5;
 }
 
 nav li {
     border: solid orange 2px;
     background-color: black;
-    width: 15vw;
+    width: 40vw;
     height: calc(2.fit-content);
     text-align: center;
 }
@@ -52,10 +59,33 @@ nav a {
     color: gold;
 }
 
- nav a:hover {
+nav a:hover {
     color: orange;
     transition: all 1s;
- } 
+} 
+
+.navbar-toggler{
+    background-color: gold;
+    color: black;
+}
+
+.navbar-toggler:hover{
+    background-color: orange;
+}
+
+.dropdown-menu{
+    border: solid orange 2px;
+    background-color:gold ;
+}
+
+.dropdown-item{
+    background-color: gold;
+}
+
+.dropdown-item:hover{
+    background-color: orange;
+    transition: all 1s;
+}
 
 /*termina header*/
 /*comienza main*/
@@ -66,21 +96,16 @@ main {
 }
 
 main img {
-    width: 85vw;
-    height: auto;
+    width: 90%;
     padding: 5vw;
 }
 
-.img__p {
+/* .img__p {
     width: 80vw;
     height: auto;
     padding: 0px 10vw 10px;
     margin-left: 5vw;
-}
-
-h1{
-    text-align: center;
-}
+} */
 
 h2 {
     text-align: justify;
@@ -101,7 +126,7 @@ h4 {
 
 p {
     font-size: small;
-    font-weight: lighter;
+    font-weight: light;
     margin: 10px;
 }
 
@@ -183,13 +208,12 @@ footer li {
     /*comienza header*/
     header {
         flex-flow: column nowrap;
-        justify-content: space-around;
         align-items: center;
     }
 
     h1 {
-        font-size: xx-large;
-
+        font-size: 33px;
+        text-align: center;
     }
 
     /*termina header*/
@@ -212,15 +236,15 @@ footer li {
     }
 
     /* exclusivo pagina acerca*/
-    .ap__imgp {
+    /* .ap__imgp {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-    }
+    } */
 
-    .ap__imgp img {
+    /* .ap__imgp img {
         width: 30%;
-    }
+    } */
 
     .redes__cont {
         justify-content: center;
@@ -230,11 +254,11 @@ footer li {
         width: 5vw;
     }
 
-    iframe {
+    /* iframe {
         left: 25vw;
         width: 50vw;
         height: 25vw;
-    }
+    } */
     /*fin exclusivo pagina acera*/
     /*termina main*/
 }
@@ -254,13 +278,9 @@ footer li {
     /*termina header*/
     /*comienze main*/
 
-    #cern__main {
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-
-    #cern__main img {
+    /* #cern__main img {
         width: 25vw;
-    }
+    } */
 
     h2 {
         font-size: x-large;
@@ -281,15 +301,23 @@ footer li {
         font-weight: normal;
     }
 
-    .ap__imgp img {
+    /* .ap__imgp img {
         width: 40%;
-    }
+    } */
 
-    iframe {
+    /* iframe {
         left: 30vw;
         width: 40vw;
         height: 20vw;
-    }
+    } */
 
     /*termina main*/
+}
+
+ /*mediaq xl*/
+@media only screen and (min-width:992px) {
+   
+    nav li{
+        width: 15vw;
+    }
 }
