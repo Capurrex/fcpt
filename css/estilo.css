@@ -30,6 +30,7 @@ header {
     animation-duration: 2s;
     animation-timing-function: ease-in;
     justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -100,13 +101,6 @@ main img {
     padding: 5vw;
 }
 
-/* .img__p {
-    width: 80vw;
-    height: auto;
-    padding: 0px 10vw 10px;
-    margin-left: 5vw;
-} */
-
 h2 {
     text-align: justify;
     font-size: large;
@@ -125,9 +119,7 @@ h4 {
 }
 
 p {
-    font-size: small;
-    font-weight: light;
-    margin: 10px;
+    margin: 20px;
 }
 
 .contacto__p {
