@@ -60,17 +60,17 @@
     <!--comienza main-->
     <main>
         <h2>Contacto</h2>
-        <p class="contacto__p">Aquí puedes contactarte conmigo, ya sea por interes en mi trabajo, consejos para mejorar
+        <p class="contacto__p offset-md-1">Aquí puedes contactarte conmigo, ya sea por interes en mi trabajo, consejos para mejorar
             la pagina u otros motivos. </p>
-        <form action="por verse" method="post" enctype="text/plain">
-            <label for="text">Nombre:</label>
-            <input type="text" name="nombre">
-            <label for="text">Correo :&nbsp;</label>
-            <input type="text" name="mail" required>
-            <label for="comentarios">Comentarios:</label>
-            <textarea name="comentarios" id="comentarios" cols="35" rows="10" placeholder="Gracias por tus comentarios"
+        <form action="por verse" method="post" enctype="text/plain" class="container-fluid">
+            <label for="text" class="offset-md-1">Nombre:</label>
+            <input type="text" name="nombre" class="formEscribir offset-md-1 col-md-8 col-xs-12">
+            <label for="text" class="offset-md-1">Correo :&nbsp;</label>
+            <input type="text" name="mail" class="formEscribir offset-md-1 col-md-8 col-xs-12" required>
+            <label for="comentarios" class="offset-1">Comentarios:</label>
+            <textarea name="comentarios" id="comentarios" class="col-md-10 col-xs-12 offset-md-1 formEscribir" rows="10" placeholder="Gracias por tus comentarios"
                 required></textarea><br>
-            <input type="submit" value="enviar">
+            <input type="submit" value="enviar" class="offset-md-1 botonEnviar">
         </form>
     </main>
     <!--termina main-->

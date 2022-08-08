@@ -11,17 +11,21 @@
     30%{ background-image: linear-gradient(to right,steelblue, gold 70%) ;}
     40%{ background-image: linear-gradient(to right,steelblue, gold 60%) ;}
     50%{ background-image: linear-gradient(to right,steelblue, gold 50% ) ;}
-    60%{background-image: linear-gradient(to bottom right, steelblue 50%, gold);}
-    70%{background-image: linear-gradient(to bottom right, steelblue 60%, gold);}
-    80%{background-image: linear-gradient(to bottom right, steelblue 70%, gold);}
-    90%{background-image: linear-gradient(to bottom right, steelblue 80%, gold);}
-    100%{background-image: linear-gradient(to bottom right, steelblue 90%, gold);}
+    60%{background-image: linear-gradient(to bottom right, steelblue 60%, gold);}
+    70%{background-image: linear-gradient(to bottom right, steelblue 70%, gold);}
+    80%{background-image: linear-gradient(to bottom right, steelblue 80%, gold);}
+    90%{background-image: linear-gradient(to bottom right, steelblue 90%, gold);}
+    100%{background-image: linear-gradient(to bottom right, steelblue 95%, gold);}
 }
 
+@keyframes bordermoves{
+    0%{border: dashed;}
+    100%{border: dotted;}
+}
 /*comienza header*/
 
 header {
-    background-image: linear-gradient(to bottom right, steelblue 90%, gold  );
+    background-image: linear-gradient(to bottom right, steelblue 80%, gold  );
     background-position: center;
     width: 100vw;
     height: 150px;
@@ -142,13 +146,14 @@ p {
     list-style: none;
     width: 10vw;
     height: auto;
+    box-sizing: unset;
 }
 
 iframe {
     position: relative;
     left: 15vw;
     width: 70vw;
-    height: auto;
+    height: 35vw;
 }
 
 form {
@@ -159,6 +164,33 @@ form {
 label {
     display: block;
     margin: 10px;
+}
+
+.botonEnviar {
+    width: 15vw;
+    height: calc(2.fit-content);
+    font-size: large;
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: orange;
+}
+
+.botonEnviar:hover{
+    background-color: gold;
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+}
+
+.formEscribir{
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+}
+
+.formEscribir:focus{
+    background-color: gold;
+    animation: bordermoves 1s linear 0s infinite;
+    animation-duration: 1s;
 }
 
 /*termina main*/
