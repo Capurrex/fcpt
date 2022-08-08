@@ -123,6 +123,7 @@ h4 {
 }
 
 p {
+    text-align: center;
     margin: 20px;
 }
 
@@ -262,17 +263,6 @@ footer li {
         font-size: medium;
         text-align: center;
     }
-
-    /* exclusivo pagina acerca*/
-    /* .ap__imgp {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-    } */
-
-    /* .ap__imgp img {
-        width: 30%;
-    } */
 
     .redes__cont {
         justify-content: center;
