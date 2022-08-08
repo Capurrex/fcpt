@@ -22,6 +22,13 @@
     0%{border: dashed;}
     100%{border: dotted;}
 }
+
+@keyframes girar{
+    0%{transform: rotate(1deg);}
+    50%{transform: rotate(160deg);}
+    100%{transform: rotate(359deg);}
+}
+
 /*comienza header*/
 
 header {
@@ -194,6 +201,10 @@ label {
     animation-duration: 1s;
 }
 
+.girar{
+    animation: girar 3s linear 0s infinite;
+}
+
 /*termina main*/
 /*comienza footer*/
 
@@ -271,12 +282,6 @@ footer li {
     .redes img {
         width: 5vw;
     }
-
-    /* iframe {
-        left: 25vw;
-        width: 50vw;
-        height: 25vw;
-    } */
     /*fin exclusivo pagina acera*/
     /*termina main*/
 }
@@ -292,13 +297,6 @@ footer li {
     nav li {
         font-size: medium;
     }
-
-    /*termina header*/
-    /*comienze main*/
-
-    /* #cern__main img {
-        width: 25vw;
-    } */
 
     h2 {
         font-size: x-large;
@@ -318,16 +316,6 @@ footer li {
         font-size: medium;
         font-weight: normal;
     }
-
-    /* .ap__imgp img {
-        width: 40%;
-    } */
-
-    /* iframe {
-        left: 30vw;
-        width: 40vw;
-        height: 20vw;
-    } */
 
     /*termina main*/
 }
