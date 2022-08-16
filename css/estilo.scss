@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@keyframes animacionheader {
+    0% {background-color:gold ;}
+    10%{ background-image: linear-gradient(to right,steelblue, gold 90%) ;}
+    20%{ background-image: linear-gradient(to right,steelblue, gold 80%) ;}
+    30%{ background-image: linear-gradient(to right,steelblue, gold 70%) ;}
+    40%{ background-image: linear-gradient(to right,steelblue, gold 60%) ;}
+    50%{ background-image: linear-gradient(to right,steelblue, gold 50% ) ;}
+    60%{background-image: linear-gradient(to bottom right, steelblue 60%, gold);}
+    70%{background-image: linear-gradient(to bottom right, steelblue 70%, gold);}
+    80%{background-image: linear-gradient(to bottom right, steelblue 80%, gold);}
+    90%{background-image: linear-gradient(to bottom right, steelblue 90%, gold);}
+    100%{background-image: linear-gradient(to bottom right, steelblue 95%, gold);}
+}
+
+@keyframes bordermoves{
+    0%{border: dashed;}
+    100%{border: dotted;}
+}
+
+@keyframes girar{
+    0%{transform: rotate(1deg);}
+    50%{transform: rotate(160deg);}
+    100%{transform: rotate(359deg);}
+}
+
+/*comienza header*/
+
+header {
+    background-image: linear-gradient(to bottom right, steelblue 80%, gold  );
+    background-position: center;
+    width: 100vw;
+    height: 150px;
+    animation-name: animacionheader;
+    animation-iteration-count: 1;   
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: gold;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    width: 90%;
+    text-align: center;
+}
+
+nav{
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    z-index: 5;
+}
+
+nav li {
+    border: solid orange 2px;
+    background-color: black;
+    width: 40vw;
+    height: 50px;
+    text-align: center;
+}
+
+nav a {
+    color: gold;
+}
+
+nav a:hover {
+    color: orange;
+    transition: all 1s;
+} 
+
+.navbar-toggler{
+    background-color: gold;
+    color: black;
+}
+
+.navbar-toggler:hover{
+    background-color: orange;
+}
+
+.dropdown-menu{
+    border: solid orange 2px;
+    background-color:gold ;
+}
+
+.dropdown-item{
+    background-color: gold;
+}
+
+.dropdown-item:hover{
+    background-color: orange;
+    transition: all 0.5s;
+}
+
+/*termina header*/
+/*comienza main*/
+
+main {
+    background-color: blanchedalmond;
+    width: 100vw;
+}
+
+main img {
+    width: 90%;
+    padding: 5vw;
+}
+
+h2 {
+    text-align: justify;
+    font-size: large;
+    text-decoration: underline;
+    color: darkorange;
+    padding: 25px;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 10px 25px 10px;
+}
+
+h4 {
+    margin-left: 25px;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+}
+
+.pieFoto{
+    color: blue;
+}
+
+.contacto__p {
+    width: 70vw;
+}
+
+.redes__cont {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.redes img {
+    list-style: none;
+    width: 10vw;
+    height: auto;
+    box-sizing: unset;
+}
+
+iframe {
+    position: relative;
+    left: 15vw;
+    width: 70vw;
+    height: 35vw;
+}
+
+form {
+    display: block;
+    padding: 50px;
+}
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+.botonEnviar {
+    width: 15vw;
+    height: 35px;
+    font-size: large;
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: orange;
+}
+
+.botonEnviar:hover{
+    background-color: gold;
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+}
+
+.formEscribir{
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+}
+
+.formEscribir:focus{
+    background-color: gold;
+    animation: bordermoves 1s linear 0s infinite;
+    animation-duration: 1s;
+}
+
+.girar{
+    animation: girar 8s linear 0s infinite;
+}
+
+/*termina main*/
+/*comienza footer*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(236, 129, 35);
+    background-position-y: bottom;
+    width: 100vw;
+    height: 150px;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
+
+footer ul {
+    list-style-image: url(../imgs/atomo.ico);
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover{
+    color: darkgray;
+}
+
+footer li {
+    color: black;
+}
+
+/*termina footer*/
+
+/* mediaq tablet*/
+@media only screen and (min-width:576px) {
+
+    /*comienza header*/
+    header {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 33px;
+        text-align: center;
+    }
+
+    /*termina header*/
+    /*comienza main*/
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    p {
+        font-size: medium;
+        text-align: center;
+    }
+
+    .redes__cont {
+        justify-content: center;
+    }
+
+    .redes img {
+        width: 5vw;
+    }
+    /*fin exclusivo pagina acera*/
+    /*termina main*/
+}
+
+/*mediaq desk*/
+@media only screen and (min-width:768px) {
+
+    /*comienza header*/
+    h1 {
+        font-size: 35px;
+    }
+
+    nav li {
+        font-size: medium;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    h3 {
+        font-weight: bold;
+        margin: 10px 25px 10px;
+        font-size: large;
+    }
+
+    h4 {
+        font-size: large;
+    }
+
+    p {
+        font-size: medium;
+        font-weight: normal;
+    }
+
+    /*termina main*/
+}
+
+ /*mediaq xl*/
+@media only screen and (min-width:992px) {
+   
+    nav li{
+        width: 15vw;
+    }
+}
