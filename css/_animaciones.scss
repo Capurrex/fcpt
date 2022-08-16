@@ -1,0 +1,24 @@
+@keyframes animacionheader {
+    0% {background-color:$color5 ;}
+    10%{ background-image: linear-gradient(to right,$color3, $color5 90%) ;}
+    20%{ background-image: linear-gradient(to right,$color3, $color5 80%) ;}
+    30%{ background-image: linear-gradient(to right,$color3, $color5 70%) ;}
+    40%{ background-image: linear-gradient(to right,$color3, $color5 60%) ;}
+    50%{ background-image: linear-gradient(to right,$color3, $color5 50% ) ;}
+    60%{background-image: linear-gradient(to bottom right, $color3 60%, $color5);}
+    70%{background-image: linear-gradient(to bottom right, $color3 70%, $color5);}
+    80%{background-image: linear-gradient(to bottom right, $color3 80%, $color5);}
+    90%{background-image: linear-gradient(to bottom right, $color3 90%, $color5);}
+    100%{background-image: linear-gradient(to bottom right, $color3 95%, $color5);}
+}
+
+@keyframes bordermoves{
+    0%{border: dashed;}
+    100%{border: dotted;}
+}
+
+@keyframes girar{
+    0%{transform: rotate(1deg);}
+    50%{transform: rotate(160deg);}
+    100%{transform: rotate(359deg);}
+}

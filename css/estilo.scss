@@ -1,38 +1,21 @@
+/*variables*/
+$color1:#F5EEB8;
+$color2:#e9e64f;
+$color3:#172CE6;
+$color4:#fc0d0d;
+$color5:#F2A80C;
+
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-@keyframes animacionheader {
-    0% {background-color:gold ;}
-    10%{ background-image: linear-gradient(to right,steelblue, gold 90%) ;}
-    20%{ background-image: linear-gradient(to right,steelblue, gold 80%) ;}
-    30%{ background-image: linear-gradient(to right,steelblue, gold 70%) ;}
-    40%{ background-image: linear-gradient(to right,steelblue, gold 60%) ;}
-    50%{ background-image: linear-gradient(to right,steelblue, gold 50% ) ;}
-    60%{background-image: linear-gradient(to bottom right, steelblue 60%, gold);}
-    70%{background-image: linear-gradient(to bottom right, steelblue 70%, gold);}
-    80%{background-image: linear-gradient(to bottom right, steelblue 80%, gold);}
-    90%{background-image: linear-gradient(to bottom right, steelblue 90%, gold);}
-    100%{background-image: linear-gradient(to bottom right, steelblue 95%, gold);}
-}
-
-@keyframes bordermoves{
-    0%{border: dashed;}
-    100%{border: dotted;}
-}
-
-@keyframes girar{
-    0%{transform: rotate(1deg);}
-    50%{transform: rotate(160deg);}
-    100%{transform: rotate(359deg);}
-}
-
 /*comienza header*/
 
 header {
-    background-image: linear-gradient(to bottom right, steelblue 80%, gold  );
+    background-image: linear-gradient(to bottom right, $color3 80%, $color5  );
     background-position: center;
     width: 100vw;
     height: 150px;
@@ -45,7 +28,7 @@ header {
 }
 
 h1 {
-    color: gold;
+    color: $color5;
     font-size: 20px;
     font-weight: bolder;
     font-family: sans-serif;
@@ -57,72 +40,68 @@ nav{
     justify-content: flex-end;
     flex-direction: row-reverse;
     z-index: 5;
+    li {
+        border: solid $color5 2px;
+        background-color: black;
+        width: 40vw;
+        height: 50px;
+        text-align: center;
+    }
+    a {
+        color: $color5;
+        &:hover {
+            color: $color1;
+            transition: all 1s;
+        } 
+    }
 }
-
-nav li {
-    border: solid orange 2px;
-    background-color: black;
-    width: 40vw;
-    height: 50px;
-    text-align: center;
-}
-
-nav a {
-    color: gold;
-}
-
-nav a:hover {
-    color: orange;
-    transition: all 1s;
-} 
 
 .navbar-toggler{
-    background-color: gold;
+    background-color: $color5;
     color: black;
-}
-
-.navbar-toggler:hover{
-    background-color: orange;
+    &:hover{
+        background-color: $color1;
+    }
 }
 
 .dropdown-menu{
-    border: solid orange 2px;
-    background-color:gold ;
+    border: solid $color5 2px;
+    background-color:$color5 ;
 }
 
 .dropdown-item{
-    background-color: gold;
-}
-
-.dropdown-item:hover{
-    background-color: orange;
-    transition: all 0.5s;
+    background-color: $color5;
+    border-radius: 5px;
+    &:hover{
+        background-color: $color1;
+        transition: all 0.5s;
+    }
 }
 
 /*termina header*/
 /*comienza main*/
 
 main {
-    background-color: blanchedalmond;
+    background-color: $color1;
     width: 100vw;
+    img {
+        width: 90%;
+        padding: 5vw;
+    }
 }
 
-main img {
-    width: 90%;
-    padding: 5vw;
-}
 
 h2 {
     text-align: justify;
     font-size: large;
     text-decoration: underline;
-    color: darkorange;
+    color: $color5;
     padding: 25px;
 }
 
 h3 {
     font-weight: bold;
-    margin: 10px 25px 10px;
+    margin: 10px 35px 10px;
 }
 
 h4 {
@@ -130,12 +109,12 @@ h4 {
 }
 
 p {
-    text-align: center;
-    margin: 20px;
+    text-align: justify;
+    margin: 35px;
 }
 
 .pieFoto{
-    color: blue;
+    color: $color3;
 }
 
 .contacto__p {
@@ -180,25 +159,24 @@ label {
     font-size: large;
     border: solid black 2px;
     border-radius: 5px;
-    background-color: orange;
+    background-color: $color5;
+    &:hover{
+        background-color: $color2;
+        transform: scale(1.2, 1.2);
+        transition: all 1s;
+    }
 }
 
-.botonEnviar:hover{
-    background-color: gold;
-    transform: scale(1.2, 1.2);
-    transition: all 1s;
-}
 
 .formEscribir{
-    background-color: orange;
+    background-color: $color5;
     border: none;
     border-radius: 5px;
-}
-
-.formEscribir:focus{
-    background-color: gold;
-    animation: bordermoves 1s linear 0s infinite;
-    animation-duration: 1s;
+    &:focus{
+        background-color: $color2;
+        animation: bordermoves 1s linear 0s infinite;
+        animation-duration: 1s;
+    }
 }
 
 .girar{
@@ -217,29 +195,23 @@ footer {
     background-position-y: bottom;
     width: 100vw;
     height: 150px;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    ul {
+        list-style-image: url(../imgs/atomo.ico);
+    }
+    a {
+        color: black;
+        &:hover{
+            color: $color2;
+        }
+    }
+    li {
+        color: black;
+    }
 }
-
-footer img {
-    width: 100px;
-    height: 100px;
-}
-
-footer ul {
-    list-style-image: url(../imgs/atomo.ico);
-}
-
-footer a {
-    color: black;
-}
-
-footer a:hover{
-    color: darkgray;
-}
-
-footer li {
-    color: black;
-}
-
 /*termina footer*/
 
 /* mediaq tablet*/
@@ -272,7 +244,7 @@ footer li {
 
     p {
         font-size: medium;
-        text-align: center;
+        text-align: justify;
     }
 
     .redes__cont {
@@ -326,4 +298,13 @@ footer li {
     nav li{
         width: 15vw;
     }
+    footer{
+        height: 200px;
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
 }
+
+@import"animaciones"

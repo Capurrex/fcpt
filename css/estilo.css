@@ -1,121 +1,13 @@
+/*variables*/
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-@-webkit-keyframes animacionheader {
-  0% {
-    background-color: gold;
-  }
-  10% {
-    background-image: linear-gradient(to right, steelblue, gold 90%);
-  }
-  20% {
-    background-image: linear-gradient(to right, steelblue, gold 80%);
-  }
-  30% {
-    background-image: linear-gradient(to right, steelblue, gold 70%);
-  }
-  40% {
-    background-image: linear-gradient(to right, steelblue, gold 60%);
-  }
-  50% {
-    background-image: linear-gradient(to right, steelblue, gold 50%);
-  }
-  60% {
-    background-image: linear-gradient(to bottom right, steelblue 60%, gold);
-  }
-  70% {
-    background-image: linear-gradient(to bottom right, steelblue 70%, gold);
-  }
-  80% {
-    background-image: linear-gradient(to bottom right, steelblue 80%, gold);
-  }
-  90% {
-    background-image: linear-gradient(to bottom right, steelblue 90%, gold);
-  }
-  100% {
-    background-image: linear-gradient(to bottom right, steelblue 95%, gold);
-  }
-}
-
-@keyframes animacionheader {
-  0% {
-    background-color: gold;
-  }
-  10% {
-    background-image: linear-gradient(to right, steelblue, gold 90%);
-  }
-  20% {
-    background-image: linear-gradient(to right, steelblue, gold 80%);
-  }
-  30% {
-    background-image: linear-gradient(to right, steelblue, gold 70%);
-  }
-  40% {
-    background-image: linear-gradient(to right, steelblue, gold 60%);
-  }
-  50% {
-    background-image: linear-gradient(to right, steelblue, gold 50%);
-  }
-  60% {
-    background-image: linear-gradient(to bottom right, steelblue 60%, gold);
-  }
-  70% {
-    background-image: linear-gradient(to bottom right, steelblue 70%, gold);
-  }
-  80% {
-    background-image: linear-gradient(to bottom right, steelblue 80%, gold);
-  }
-  90% {
-    background-image: linear-gradient(to bottom right, steelblue 90%, gold);
-  }
-  100% {
-    background-image: linear-gradient(to bottom right, steelblue 95%, gold);
-  }
-}
-@-webkit-keyframes bordermoves {
-  0% {
-    border: dashed;
-  }
-  100% {
-    border: dotted;
-  }
-}
-@keyframes bordermoves {
-  0% {
-    border: dashed;
-  }
-  100% {
-    border: dotted;
-  }
-}
-@-webkit-keyframes girar {
-  0% {
-    transform: rotate(1deg);
-  }
-  50% {
-    transform: rotate(160deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
-}
-@keyframes girar {
-  0% {
-    transform: rotate(1deg);
-  }
-  50% {
-    transform: rotate(160deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
-}
 /*comienza header*/
 header {
-  background-image: linear-gradient(to bottom right, steelblue 80%, gold);
+  background-image: linear-gradient(to bottom right, #172CE6 80%, #F2A80C);
   background-position: center;
   width: 100vw;
   height: 150px;
@@ -132,7 +24,7 @@ header {
 }
 
 h1 {
-  color: gold;
+  color: #F2A80C;
   font-size: 20px;
   font-weight: bolder;
   font-family: sans-serif;
@@ -145,54 +37,49 @@ nav {
   flex-direction: row-reverse;
   z-index: 5;
 }
-
 nav li {
-  border: solid orange 2px;
+  border: solid #F2A80C 2px;
   background-color: black;
   width: 40vw;
   height: 50px;
   text-align: center;
 }
-
 nav a {
-  color: gold;
+  color: #F2A80C;
 }
-
 nav a:hover {
-  color: orange;
+  color: #F5EEB8;
   transition: all 1s;
 }
 
 .navbar-toggler {
-  background-color: gold;
+  background-color: #F2A80C;
   color: black;
 }
-
 .navbar-toggler:hover {
-  background-color: orange;
+  background-color: #F5EEB8;
 }
 
 .dropdown-menu {
-  border: solid orange 2px;
-  background-color: gold;
+  border: solid #F2A80C 2px;
+  background-color: #F2A80C;
 }
 
 .dropdown-item {
-  background-color: gold;
+  background-color: #F2A80C;
+  border-radius: 5px;
 }
-
 .dropdown-item:hover {
-  background-color: orange;
+  background-color: #F5EEB8;
   transition: all 0.5s;
 }
 
 /*termina header*/
 /*comienza main*/
 main {
-  background-color: blanchedalmond;
+  background-color: #F5EEB8;
   width: 100vw;
 }
-
 main img {
   width: 90%;
   padding: 5vw;
@@ -202,13 +89,13 @@ h2 {
   text-align: justify;
   font-size: large;
   text-decoration: underline;
-  color: darkorange;
+  color: #F2A80C;
   padding: 25px;
 }
 
 h3 {
   font-weight: bold;
-  margin: 10px 25px 10px;
+  margin: 10px 35px 10px;
 }
 
 h4 {
@@ -216,12 +103,12 @@ h4 {
 }
 
 p {
-  text-align: center;
-  margin: 20px;
+  text-align: justify;
+  margin: 35px;
 }
 
 .pieFoto {
-  color: blue;
+  color: #172CE6;
 }
 
 .contacto__p {
@@ -266,23 +153,21 @@ label {
   font-size: large;
   border: solid black 2px;
   border-radius: 5px;
-  background-color: orange;
+  background-color: #F2A80C;
 }
-
 .botonEnviar:hover {
-  background-color: gold;
+  background-color: #e9e64f;
   transform: scale(1.2, 1.2);
   transition: all 1s;
 }
 
 .formEscribir {
-  background-color: orange;
+  background-color: #F2A80C;
   border: none;
   border-radius: 5px;
 }
-
 .formEscribir:focus {
-  background-color: gold;
+  background-color: #e9e64f;
   -webkit-animation: bordermoves 1s linear 0s infinite;
           animation: bordermoves 1s linear 0s infinite;
   -webkit-animation-duration: 1s;
@@ -306,24 +191,19 @@ footer {
   width: 100vw;
   height: 150px;
 }
-
 footer img {
   width: 100px;
   height: 100px;
 }
-
 footer ul {
   list-style-image: url(../imgs/atomo.ico);
 }
-
 footer a {
   color: black;
 }
-
 footer a:hover {
-  color: darkgray;
+  color: #e9e64f;
 }
-
 footer li {
   color: black;
 }
@@ -353,7 +233,7 @@ footer li {
   }
   p {
     font-size: medium;
-    text-align: center;
+    text-align: justify;
   }
   .redes__cont {
     justify-content: center;
@@ -394,5 +274,120 @@ footer li {
 @media only screen and (min-width: 992px) {
   nav li {
     width: 15vw;
+  }
+  footer {
+    height: 200px;
+  }
+  footer img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@-webkit-keyframes animacionheader {
+  0% {
+    background-color: #F2A80C;
+  }
+  10% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 90%);
+  }
+  20% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 80%);
+  }
+  30% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 70%);
+  }
+  40% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 60%);
+  }
+  50% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 50%);
+  }
+  60% {
+    background-image: linear-gradient(to bottom right, #172CE6 60%, #F2A80C);
+  }
+  70% {
+    background-image: linear-gradient(to bottom right, #172CE6 70%, #F2A80C);
+  }
+  80% {
+    background-image: linear-gradient(to bottom right, #172CE6 80%, #F2A80C);
+  }
+  90% {
+    background-image: linear-gradient(to bottom right, #172CE6 90%, #F2A80C);
+  }
+  100% {
+    background-image: linear-gradient(to bottom right, #172CE6 95%, #F2A80C);
+  }
+}
+@keyframes animacionheader {
+  0% {
+    background-color: #F2A80C;
+  }
+  10% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 90%);
+  }
+  20% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 80%);
+  }
+  30% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 70%);
+  }
+  40% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 60%);
+  }
+  50% {
+    background-image: linear-gradient(to right, #172CE6, #F2A80C 50%);
+  }
+  60% {
+    background-image: linear-gradient(to bottom right, #172CE6 60%, #F2A80C);
+  }
+  70% {
+    background-image: linear-gradient(to bottom right, #172CE6 70%, #F2A80C);
+  }
+  80% {
+    background-image: linear-gradient(to bottom right, #172CE6 80%, #F2A80C);
+  }
+  90% {
+    background-image: linear-gradient(to bottom right, #172CE6 90%, #F2A80C);
+  }
+  100% {
+    background-image: linear-gradient(to bottom right, #172CE6 95%, #F2A80C);
+  }
+}
+@-webkit-keyframes bordermoves {
+  0% {
+    border: dashed;
+  }
+  100% {
+    border: dotted;
+  }
+}
+@keyframes bordermoves {
+  0% {
+    border: dashed;
+  }
+  100% {
+    border: dotted;
+  }
+}
+@-webkit-keyframes girar {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+@keyframes girar {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(359deg);
   }
 }/*# sourceMappingURL=estilo.css.map */
