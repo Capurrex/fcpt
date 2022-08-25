@@ -38,10 +38,10 @@ nav {
   z-index: 5;
 }
 nav li {
-  border: solid #F2A80C 2px;
-  background-color: black;
-  width: 40vw;
   height: 50px;
+  width: 40vw;
+  background-color: black;
+  border: solid #F2A80C 2px;
   text-align: center;
 }
 nav a {
@@ -147,31 +147,27 @@ label {
   margin: 10px;
 }
 
-.botonEnviar {
-  width: 15vw;
-  height: 35px;
-  font-size: large;
-  border: solid black 2px;
-  border-radius: 5px;
-  background-color: #F2A80C;
-}
-.botonEnviar:hover {
-  background-color: #e9e64f;
-  transform: scale(1.2, 1.2);
-  transition: all 1s;
-}
-
-.formEscribir {
+.formEscribir, .botonEnviar {
   background-color: #F2A80C;
   border: none;
   border-radius: 5px;
 }
-.formEscribir:focus {
+.formEscribir:focus, .botonEnviar:focus {
   background-color: #e9e64f;
   -webkit-animation: bordermoves 1s linear 0s infinite;
           animation: bordermoves 1s linear 0s infinite;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  transition: all 1s;
+}
+
+.botonEnviar {
+  width: 15vw;
+  height: 35px;
+  font-size: large;
+}
+.botonEnviar:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .girar {
@@ -182,14 +178,14 @@ label {
 /*termina main*/
 /*comienza footer*/
 footer {
+  height: 150px;
+  width: 100vw;
+  background-color: rgb(236, 129, 35);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgb(236, 129, 35);
   background-position-y: bottom;
-  width: 100vw;
-  height: 150px;
 }
 footer img {
   width: 100px;
