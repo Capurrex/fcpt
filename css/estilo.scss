@@ -1,6 +1,6 @@
 /*variables*/
 $color1:#F5EEB8;
-$color2:#e9e64f;
+$color2:gold;
 $color3:#172CE6;
 $color4:#fc0d0d;
 $color5:#F2A80C;
@@ -20,7 +20,7 @@ $color5:#F2A80C;
 /*comienza header*/
 
 header {
-    background-image: linear-gradient(to bottom right, $color3 80%, $color5  );
+    background-image: linear-gradient(to bottom right, $color3 80%, $color2  );
     background-position: center;
     width: 100vw;
     height: 150px;
@@ -33,12 +33,13 @@ header {
 }
 
 h1 {
-    color: $color5;
+    color: $color2;
     font-size: 20px;
     font-weight: bolder;
     font-family: sans-serif;
     width: 90%;
     text-align: center;
+    text-shadow: $color5 20px 15px 5px;
 }
 
 nav{
@@ -47,13 +48,13 @@ nav{
     z-index: 5;
     li {
         @include sizes(50px, 40vw, black);
-        border: solid $color5 2px;
+        border: solid $color2 2px;
         text-align: center;
     }
     a {
-        color: $color5;
+        color: $color2;
         &:hover {
-            color: $color1;
+            color: $color5;
             transition: all 1s;
         } 
     }
@@ -68,15 +69,15 @@ nav{
 }
 
 .dropdown-menu{
-    border: solid $color5 2px;
-    background-color:$color5 ;
+    border: solid $color2 2px;
+    background-color:$color1 ;
 }
 
 .dropdown-item{
-    background-color: $color5;
+    background-color: $color1;
     border-radius: 5px;
     &:hover{
-        background-color: $color1;
+        background-color: $color5;
         transition: all 0.5s;
     }
 }
@@ -90,9 +91,23 @@ main {
     img {
         width: 90%;
         padding: 5vw;
+        border: $color5 5px solid;
+        border-radius: 15px 0px 15px 5px;
+        box-shadow: $color2 0 0 15px inset;
     }
 }
 
+.backg1{
+    background-image: linear-gradient(33deg, $color3 25%, $color2 40%, $color3);
+}
+
+.backg2{
+    background-image: linear-gradient(63deg, $color5 30%, $color4 40%, $color3);
+}
+
+.backg3{
+    background-image: linear-gradient(78deg, $color4 25%, $color2 35%, $color5);
+}
 
 h2 {
     text-align: justify;
@@ -116,6 +131,10 @@ p {
     margin: 35px;
 }
 
+.no__padding{
+    padding: 0;
+}
+
 .pieFoto{
     color: $color3;
 }
@@ -137,6 +156,9 @@ p {
     width: 10vw;
     height: auto;
     box-sizing: unset;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
 iframe {
@@ -176,6 +198,10 @@ label {
     &:hover{
         transform: scale(1.2, 1.2);
     }
+}
+
+#margen{
+    padding: 35px;
 }
 
 .girar{

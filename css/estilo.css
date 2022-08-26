@@ -7,7 +7,7 @@
 
 /*comienza header*/
 header {
-  background-image: linear-gradient(to bottom right, #172CE6 80%, #F2A80C);
+  background-image: linear-gradient(to bottom right, #172CE6 80%, gold);
   background-position: center;
   width: 100vw;
   height: 150px;
@@ -24,12 +24,13 @@ header {
 }
 
 h1 {
-  color: #F2A80C;
+  color: gold;
   font-size: 20px;
   font-weight: bolder;
   font-family: sans-serif;
   width: 90%;
   text-align: center;
+  text-shadow: #F2A80C 20px 15px 5px;
 }
 
 nav {
@@ -41,14 +42,14 @@ nav li {
   height: 50px;
   width: 40vw;
   background-color: black;
-  border: solid #F2A80C 2px;
+  border: solid gold 2px;
   text-align: center;
 }
 nav a {
-  color: #F2A80C;
+  color: gold;
 }
 nav a:hover {
-  color: #F5EEB8;
+  color: #F2A80C;
   transition: all 1s;
 }
 
@@ -61,16 +62,16 @@ nav a:hover {
 }
 
 .dropdown-menu {
-  border: solid #F2A80C 2px;
-  background-color: #F2A80C;
+  border: solid gold 2px;
+  background-color: #F5EEB8;
 }
 
 .dropdown-item {
-  background-color: #F2A80C;
+  background-color: #F5EEB8;
   border-radius: 5px;
 }
 .dropdown-item:hover {
-  background-color: #F5EEB8;
+  background-color: #F2A80C;
   transition: all 0.5s;
 }
 
@@ -83,6 +84,21 @@ main {
 main img {
   width: 90%;
   padding: 5vw;
+  border: #F2A80C 5px solid;
+  border-radius: 15px 0px 15px 5px;
+  box-shadow: gold 0 0 15px inset;
+}
+
+.backg1 {
+  background-image: linear-gradient(33deg, #172CE6 25%, gold 40%, #172CE6);
+}
+
+.backg2 {
+  background-image: linear-gradient(63deg, #F2A80C 30%, #fc0d0d 40%, #172CE6);
+}
+
+.backg3 {
+  background-image: linear-gradient(78deg, #fc0d0d 25%, gold 35%, #F2A80C);
 }
 
 h2 {
@@ -107,6 +123,10 @@ p {
   margin: 35px;
 }
 
+.no__padding {
+  padding: 0;
+}
+
 .pieFoto {
   color: #172CE6;
 }
@@ -128,6 +148,9 @@ p {
   width: 10vw;
   height: auto;
   box-sizing: unset;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 iframe {
@@ -153,7 +176,7 @@ label {
   border-radius: 5px;
 }
 .formEscribir:focus, .botonEnviar:focus {
-  background-color: #e9e64f;
+  background-color: gold;
   -webkit-animation: bordermoves 1s linear 0s infinite;
           animation: bordermoves 1s linear 0s infinite;
   -webkit-animation-duration: 1s;
@@ -168,6 +191,10 @@ label {
 }
 .botonEnviar:hover {
   transform: scale(1.2, 1.2);
+}
+
+#margen {
+  padding: 35px;
 }
 
 .girar {
@@ -198,7 +225,7 @@ footer a {
   color: black;
 }
 footer a:hover {
-  color: #e9e64f;
+  color: gold;
 }
 footer li {
   color: black;
@@ -281,72 +308,72 @@ footer li {
 }
 @-webkit-keyframes animacionheader {
   0% {
-    background-color: #F2A80C;
+    background-color: gold;
   }
   10% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 90%);
+    background-image: linear-gradient(to right, #172CE6, gold 90%);
   }
   20% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 80%);
+    background-image: linear-gradient(to right, #172CE6, gold 80%);
   }
   30% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 70%);
+    background-image: linear-gradient(to right, #172CE6, gold 70%);
   }
   40% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 60%);
+    background-image: linear-gradient(to right, #172CE6, gold 60%);
   }
   50% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 50%);
+    background-image: linear-gradient(to right, #172CE6, gold 50%);
   }
   60% {
-    background-image: linear-gradient(to bottom right, #172CE6 60%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 60%, gold);
   }
   70% {
-    background-image: linear-gradient(to bottom right, #172CE6 70%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 70%, gold);
   }
   80% {
-    background-image: linear-gradient(to bottom right, #172CE6 80%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 80%, gold);
   }
   90% {
-    background-image: linear-gradient(to bottom right, #172CE6 90%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 90%, gold);
   }
   100% {
-    background-image: linear-gradient(to bottom right, #172CE6 95%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 95%, gold);
   }
 }
 @keyframes animacionheader {
   0% {
-    background-color: #F2A80C;
+    background-color: gold;
   }
   10% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 90%);
+    background-image: linear-gradient(to right, #172CE6, gold 90%);
   }
   20% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 80%);
+    background-image: linear-gradient(to right, #172CE6, gold 80%);
   }
   30% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 70%);
+    background-image: linear-gradient(to right, #172CE6, gold 70%);
   }
   40% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 60%);
+    background-image: linear-gradient(to right, #172CE6, gold 60%);
   }
   50% {
-    background-image: linear-gradient(to right, #172CE6, #F2A80C 50%);
+    background-image: linear-gradient(to right, #172CE6, gold 50%);
   }
   60% {
-    background-image: linear-gradient(to bottom right, #172CE6 60%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 60%, gold);
   }
   70% {
-    background-image: linear-gradient(to bottom right, #172CE6 70%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 70%, gold);
   }
   80% {
-    background-image: linear-gradient(to bottom right, #172CE6 80%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 80%, gold);
   }
   90% {
-    background-image: linear-gradient(to bottom right, #172CE6 90%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 90%, gold);
   }
   100% {
-    background-image: linear-gradient(to bottom right, #172CE6 95%, #F2A80C);
+    background-image: linear-gradient(to bottom right, #172CE6 95%, gold);
   }
 }
 @-webkit-keyframes bordermoves {
