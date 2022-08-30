@@ -152,7 +152,7 @@ p {
   border: none;
   box-shadow: none;
 }
-.redes img :hover {
+.redes img:hover {
   -webkit-animation: skew 1s ease-in 0s 1;
           animation: skew 1s ease-in 0s 1;
 }
@@ -423,10 +423,10 @@ footer li {
     transform: skew(1deg);
   }
   50% {
-    transform: skew(10deg);
+    transform: skew(-20deg);
   }
   100% {
-    transform: skew(25deg);
+    transform: skew(1deg);
   }
 }
 @keyframes skew {
@@ -434,9 +434,9 @@ footer li {
     transform: skew(1deg);
   }
   50% {
-    transform: skew(10deg);
+    transform: skew(-20deg);
   }
   100% {
-    transform: skew(25deg);
+    transform: skew(1deg);
   }
 }/*# sourceMappingURL=estilo.css.map */

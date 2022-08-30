@@ -159,7 +159,7 @@ p {
     background: none;
     border: none;
     box-shadow: none;
-    & :hover{
+    &:hover{
         animation: skew 1s ease-in 0s 1;
     }
 }
