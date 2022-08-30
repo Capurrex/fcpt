@@ -153,8 +153,8 @@ p {
   box-shadow: none;
 }
 .redes img :hover {
-  -webkit-animation: giroz 1s ease-in 0s 1;
-          animation: giroz 1s ease-in 0s 1;
+  -webkit-animation: skew 1s ease-in 0s 1;
+          animation: skew 1s ease-in 0s 1;
 }
 
 iframe {
@@ -418,25 +418,25 @@ footer li {
     transform: rotate(359deg);
   }
 }
-@-webkit-keyframes giroz {
+@-webkit-keyframes skew {
   0% {
-    transform: rotatez(1deg);
+    transform: skew(1deg);
   }
   50% {
-    transform: rotatez(160deg);
+    transform: skew(10deg);
   }
   100% {
-    transform: rotatez(359deg);
+    transform: skew(25deg);
   }
 }
-@keyframes giroz {
+@keyframes skew {
   0% {
-    transform: rotatez(1deg);
+    transform: skew(1deg);
   }
   50% {
-    transform: rotatez(160deg);
+    transform: skew(10deg);
   }
   100% {
-    transform: rotatez(359deg);
+    transform: skew(25deg);
   }
 }/*# sourceMappingURL=estilo.css.map */
