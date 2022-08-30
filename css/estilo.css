@@ -152,6 +152,10 @@ p {
   border: none;
   box-shadow: none;
 }
+.redes img :hover {
+  -webkit-animation: giroz 1s ease-in 0s 1;
+          animation: giroz 1s ease-in 0s 1;
+}
 
 iframe {
   position: relative;
@@ -412,5 +416,27 @@ footer li {
   }
   100% {
     transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes giroz {
+  0% {
+    transform: rotatez(1deg);
+  }
+  50% {
+    transform: rotatez(160deg);
+  }
+  100% {
+    transform: rotatez(359deg);
+  }
+}
+@keyframes giroz {
+  0% {
+    transform: rotatez(1deg);
+  }
+  50% {
+    transform: rotatez(160deg);
+  }
+  100% {
+    transform: rotatez(359deg);
   }
 }/*# sourceMappingURL=estilo.css.map */

@@ -159,6 +159,9 @@ p {
     background: none;
     border: none;
     box-shadow: none;
+    & :hover{
+        animation: giroz 1s ease-in 0s 1;
+    }
 }
 
 iframe {

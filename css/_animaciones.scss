@@ -22,3 +22,9 @@
     50%{transform: rotate(160deg);}
     100%{transform: rotate(359deg);}
 }
+
+@keyframes giroz {
+    0%{transform: rotatez(1deg);}
+    50%{transform: rotatez(160deg);}
+    100%{transform: rotatez(359deg);}
+}
