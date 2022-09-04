@@ -133,15 +133,11 @@ p {
   text-align: center;
 }
 
-.contacto__p {
-  width: 70vw;
-}
-
 .redes__cont {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -211,6 +207,17 @@ label {
   padding-left: 30px;
 }
 
+.top__button {
+  color: #172CE6;
+  border: #172CE6 solid 2px;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  border-radius: 20px;
+  font-size: 35px;
+  width: fit-content5px;
+}
+
 /*termina main*/
 /*comienza footer*/
 footer {
@@ -265,7 +272,6 @@ footer li {
 }
 /*mediaq desk*/
 @media only screen and (min-width: 768px) {
-  /*comienza header*/
   h1 {
     font-size: 35px;
   }
@@ -289,8 +295,10 @@ footer li {
     font-size: medium;
     font-weight: normal;
   }
+  .top__button {
+    font-size: 50px;
+  }
 }
-/*termina main*/
 /*mediaq xl*/
 @media only screen and (min-width: 992px) {
   .desk__center {
