@@ -10,6 +10,7 @@ $color5:#F2A80C;
     margin: 0;
     padding: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 @mixin sizes ($largo, $ancho, $colorfondo) {
@@ -110,8 +111,6 @@ main {
 }
 
 h2 {
-    text-align: justify;
-    font-size: large;
     text-decoration: underline;
     color: $color5;
     padding: 25px;
@@ -238,6 +237,7 @@ footer {
         color: black;
     }
 }
+
 /*termina footer*/
 
 /* mediaq tablet*/

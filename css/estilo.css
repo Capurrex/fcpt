@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 /*comienza header*/
@@ -102,8 +103,6 @@ main img {
 }
 
 h2 {
-  text-align: justify;
-  font-size: large;
   text-decoration: underline;
   color: #F2A80C;
   padding: 25px;
