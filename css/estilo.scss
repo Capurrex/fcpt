@@ -88,10 +88,10 @@ nav{
 
 main {
     background-color: $color1;
-    width: 100vw;
     img {
-        width: 90%;
-        padding: 5vw;
+        width: 95%;
+        height: 95%;
+        padding:0;
         border: $color5 5px solid;
         border-radius: 15px 0px 15px 5px;
         box-shadow: $color2 0 0 15px inset;
@@ -113,21 +113,23 @@ main {
 h2 {
     text-decoration: underline;
     color: $color5;
-    padding: 25px;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 h3 {
     font-weight: bold;
-    margin: 10px 35px 10px;
+    text-align: center;
 }
 
 h4 {
-    margin-left: 25px;
+    text-align: center;
 }
 
 p {
     text-align: justify;
-    margin: 35px;
+    padding: 35px;
 }
 
 .no__padding{
@@ -136,6 +138,7 @@ p {
 
 .pieFoto{
     color: $color3;
+    text-align: center;
 }
 
 .contacto__p {
@@ -146,8 +149,10 @@ p {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-around;
     list-style: none;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .redes img {
@@ -159,7 +164,7 @@ p {
     border: none;
     box-shadow: none;
     &:hover{
-        animation: skew 1s ease-in 0s 1;
+        animation: skew 0.3s ease-in 0s 1;
     }
 }
 
@@ -172,7 +177,6 @@ iframe {
 
 form {
     display: block;
-    padding: 50px;
 }
 
 label {
@@ -197,24 +201,25 @@ label {
     width: 15vw;
     height: 35px;
     font-size: large;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     &:hover{
         transform: scale(1.2, 1.2);
     }
-}
-
-#margen{
-    padding: 35px;
 }
 
 .girar{
     animation: girar 8s linear 0s infinite;
 }
 
+#margen {
+    padding-left: 30px
+}
 /*termina main*/
 /*comienza footer*/
 
 footer {
-    @include sizes(150px, 100vw, rgb(236, 129, 35));
+    @include sizes(150px, 100%, rgb(236, 129, 35));
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -256,31 +261,15 @@ footer {
 
     /*termina header*/
     /*comienza main*/
-    h2 {
-        text-align: center;
-    }
-
-    h3 {
-        text-align: center;
-    }
-
-    h4 {
-        text-align: center;
-    }
 
     p {
         font-size: medium;
         text-align: justify;
     }
 
-    .redes__cont {
-        justify-content: center;
-    }
-
     .redes img {
         width: 5vw;
     }
-    /*fin exclusivo pagina acera*/
     /*termina main*/
 }
 
@@ -302,8 +291,10 @@ footer {
 
     h3 {
         font-weight: bold;
-        margin: 10px 25px 10px;
+        text-align: center;
         font-size: large;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     h4 {
@@ -314,13 +305,15 @@ footer {
         font-size: medium;
         font-weight: normal;
     }
-
-    /*termina main*/
 }
+ /*termina main*/
 
  /*mediaq xl*/
 @media only screen and (min-width:992px) {
-   
+    .desk__center{
+        text-align: center;
+    }
+    
     nav li{
         width: 15vw;
     }
@@ -331,6 +324,22 @@ footer {
             height: 150px;
         }
     }
+}
+
+@media only screen and (min-width:1200px){
+    .rellenar{
+        line-height: 3rem;}
+        p{
+            font-size: large;
+            padding: 2rem;
+        }
+        h2{
+            font-size: xx-large;
+        }
+    
+        h3{
+            font-size: x-large;
+        }
 }
 
 @import"animaciones"
