@@ -218,6 +218,10 @@ label {
   width: fit-content5px;
 }
 
+.show__md {
+  display: none;
+}
+
 /*termina main*/
 /*comienza footer*/
 footer {
@@ -267,6 +271,9 @@ footer li {
   }
   .redes img {
     width: 5vw;
+  }
+  .show__md {
+    display: inherit;
   }
   /*termina main*/
 }

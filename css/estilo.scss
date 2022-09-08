@@ -220,8 +220,11 @@ label {
     right: 3rem;
     border-radius: 20px;
     font-size: 35px; 
-    width:(fit-content + 5px);   
+    width:(fit-content + 5px); 
+}
 
+.show__md{
+    display: none;
 }
 
 /*termina main*/
@@ -278,6 +281,10 @@ footer {
 
     .redes img {
         width: 5vw;
+    }
+
+    .show__md{
+        display: inherit;
     }
     /*termina main*/
 }
