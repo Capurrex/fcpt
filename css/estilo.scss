@@ -48,7 +48,7 @@ nav{
     flex-direction: row-reverse;
     z-index: 5;
     li {
-        @include sizes(50px, 40vw, black);
+        @include sizes(50px, 65vw, black);
         border: solid $color2 2px;
         text-align: center;
     }
@@ -269,6 +269,10 @@ footer {
     h1 {
         font-size: 33px;
         text-align: center;
+    }
+
+    nav li{
+        width: 45vw;
     }
 
     /*termina header*/
